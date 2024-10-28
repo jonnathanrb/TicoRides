@@ -1,0 +1,15 @@
+#buttons-container input {
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 7px;
+    margin: -2px;
+    cursor: pointer;
+}
+
+#first-button {
+    border-radius: 25px 0px 0px 25px;
+}
+
+#last-button {
+    border-radius: 0px 25px 25px 0px;
+}
