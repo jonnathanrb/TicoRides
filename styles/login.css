@@ -1,0 +1,46 @@
+#div-registro{
+    display: flex;
+}
+#div-registro p{
+    margin: 0px;
+    margin-right: 10px;
+}
+body{
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    
+}
+#div-login{
+    display: flex;
+}
+#div-login p{
+    margin: 0px;
+    margin-right: 10px;
+}
+#botonRegister{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    
+}
+#boton-login{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    
+}
+#boton-login input{
+    border-radius: 5px; 
+    font-family: Arial, sans-serif; 
+    font-size: 15px;
+    font-weight: bolder;
+    padding: 8px 16px; 
+}
+#botonRegister input{
+    border-radius: 5px; 
+    font-family: Arial, sans-serif; 
+    font-size: 13px;
+    font-weight: bolder;
+    padding: 7px 14px; 
+}
