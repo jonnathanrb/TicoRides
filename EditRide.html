@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar - TicoRides</title>
+
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/edit-ride.css">
+</head>
+<body>
+    <div id="container">
+        <img src="imagenes/Logo.jpg" alt="logo" width="150" height="150" class="logo">
+        <div id="buttons-container">
+            <input id="first-button" type="button" value="Dashboard">
+            <input id="second button" type="button" value="Rides">
+            <input id="last-button" type="button" value="Settings">
+        </div>
+    
+        <div id="container-welcome">
+            <h1>Dashboard</h1>
+            <div>
+                <h2>Welcome User</h2>
+                <img id="img-user" src="imagenes/user.png" alt="">
+            </div>
+        </div>
+    
+        <div id="container-dashboard">
+            <a href="#" target="_blank">Dashboard</a>
+            <p>&gt;</p>
+        </div>
+
+        <!-- ################################## -->
+        <form class="form-edit" action="#" method="post">
+            <label for="fullname">Ride Name:</label>
+            <br>
+            <input placeholder="Full Name" type="text" id="fullname" name="fullname" required>
+            <br>
+            <br>
+
+            <div id="container-start-end">
+                <div>
+                    <label for="speedAverage">Start from:</label>
+                    <input placeholder="Speed Average" type="text" id="speedAverage" name="speedAverage" required>
+                </div>
+                <div>
+                    <label for="speedAverage">Start from:</label>
+                    <input placeholder="Speed Average" type="text" id="speedAverage" name="speedAverage" required>
+                </div>
+                
+                
+            </div>
+
+            <br>
+            <label for="AboutMe">Description:</label>
+            <br>
+
+            <textarea placeholder="This is my every day ride, from Barrio Los Angeles to my jobs office in Second Floor of Coopeservidores Building" name="AboutMe" id="AboutMe"></textarea>
+            <br>
+            <br>
+
+           
+            <div id="container-botones">
+                <p><a href="index.html"> cancelar</a></p>
+                <div id="boton-save">
+                    <input type="submit" value="Save">
+                </div>
+            </div>
+        </form>
+
+        <hr>
+
+        
+        <div id="container-when">
+            <p>When</p>
+            
+            <div>
+                <div id="container-when-2">
+                    <div id="container-place">
+                        <label for="departure">Departure:</label>
+                        <br>
+                        <input placeholder="Speed Average" type="text" id="speedAverage" name="departure" required>
+                        <br>
+                        <br>
+                        <label for="arrival">Estimated arrival:</label>
+                        <br>
+                        <input placeholder="Estimated arrival" type="text" id="speedAverage" name="arrival" required>
+                    </div>
+        
+                    <div  id="container-days">
+                        <p>Select days</p>
+        
+                        <div>
+                            <label><input type="checkbox" name="day" value="monday"> Monday</label><br>
+                            <label><input type="checkbox" name="day" value="tuesday"> Tuesday</label><br>
+                            <label><input type="checkbox" name="day" value="wednesday"> Wednesday</label><br>
+                            <label><input type="checkbox" name="day" value="thursday"> Thursday</label><br>
+                            <label><input type="checkbox" name="day" value="friday"> Friday</label><br>
+                            <label><input type="checkbox" name="day" value="saturday"> Saturday</label><br>
+                            <label><input type="checkbox" name="day" value="sunday"> Sunday</label><br>
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="container-botones">
+                <p><a href="index.html"> cancelar</a></p>
+                <div id="boton-save">
+                    <input type="submit" value="Save">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
