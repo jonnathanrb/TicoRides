@@ -8,15 +8,75 @@
     <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-    <div id="buttons-container">
-        <input id="first-button" type="button" value="Dashboard">
-        <input id="second button" type="button" value="Rides">
-        <input id="last-button" type="button" value="Settings">
-    </div>
+    <div id="container">
+        <img src="imagenes/Logo.jpg" alt="logo" width="150" height="150" class="logo">
+        <div id="buttons-container">
+            <input id="first-button" type="button" value="Dashboard">
+            <input id="second button" type="button" value="Rides">
+            <input id="last-button" type="button" value="Settings">
+        </div>
+    
+        <div id="container-welcome">
+            <h1>Dashboard</h1>
+            <div>
+                <h2>Welcome User</h2>
+                <img id="img-user" src="imagenes/user.png" alt="">
+            </div>
+        </div>
+    
+        <div id="container-dashboard">
+            <a href="#" target="_blank">Dashboard</a>
+            <p>&gt;</p>
+        </div>
+    
+        <h3>My rides</h3>
+    
+        <div id="container-table">
+            <div>
+                <p>Your current list of rides</p>
+                <img class="img-plus" src="imagenes/plus.png" alt="">
+            </div>
+            
+            <table>
+                <tr class="fondo-1">
+                    <th>Name</th>
+                    <th>Start</th>
+                    <th>End</th>
+                    <th>Actions</th>
+                </tr>
+                <tr  class="fondo-2">
+                    <td>Brete</td>
+                    <td>Barrio Los Angeles</td>
+                    <td>Ciudad Quesada</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+                <tr  class="fondo-1">
+                    <td>Casa</td>
+                    <td>Ciudad Quesada</td>
+                    <td>Barrio Los Angeles</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+                <tr  class="fondo-2">
+                    <td>Oficina Chepe</td>
+                    <td>Ciudad Quesada</td>
+                    <td>San Pedro</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+            </table>
 
-    <div id="container-welcome">
-        <h1>Dashboard</h1>
-        <h2>Welcome User</h2>
+            <img class="img-plus" src="imagenes/plus.png" alt="">
+        </div>
     </div>
+    
+    
 </body>
 </html>

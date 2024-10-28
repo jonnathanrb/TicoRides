@@ -1,9 +1,26 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-width: 1600px;
+    display: flex;
+    justify-content: center;
+}
+
 #buttons-container input {
     background-color: transparent;
     border: 1px solid black;
     padding: 7px;
-    margin: -2px;
+    margin: -3px;
     cursor: pointer;
+    font-size: 1.05rem;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 1.6rem;
+}
+
+h2 {
+    font-size: 1.1rem;
 }
 
 #first-button {
@@ -12,4 +29,73 @@
 
 #last-button {
     border-radius: 0px 25px 25px 0px;
+}
+
+#container-welcome {
+    display: flex;
+    justify-content: space-between;
+}
+
+#container-welcome * {
+    margin-bottom: 0px;
+}
+
+#container-welcome div {
+    display: flex;
+}
+
+#img-user {
+    width: 50px;
+    height: 50px;
+}
+
+#container-dashboard {
+    display: flex;
+}
+
+#container-dashboard * {
+    margin: 4px;
+}
+
+#container-dashboard a {
+    margin-top: 14px;
+}
+
+#container-dashboard p {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#container-table {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 0px 40px 0px 20px;
+}
+
+#container-table div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.img-plus {
+    width: 90px;
+    height: 90px;
+}
+
+tr * {
+    text-align: center;
+    padding: 10px;
+}
+
+.fondo-1 {
+    background-color: rgb(204, 202, 202);
+}
+
+.fondo-2 {
+    background-color: rgb(231, 229, 229);
 }
