@@ -99,3 +99,25 @@ tr * {
 .fondo-2 {
     background-color: rgb(231, 229, 229);
 }
+#container-dashboard h5{
+    margin-top: 14px ;
+}
+#AboutMe{
+    resize: none;
+    width: 500px;
+    height: 100px;
+}
+#container-botones p{
+margin: 0px;
+}
+#container-botones{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 100px;
+    padding-left: 100px;
+   
+}
+#boton-save input{
+    background-color: green;
+    font-family: Arial, Helvetica, sans-serif;
+}
