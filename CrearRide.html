@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,23 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar - TicoRides</title>
 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/edit-ride.css">
 </head>
 <body>
-    <div id="container">
-        <img src="imagenes/Logo.jpg" alt="logo" width="150" height="150" class="logo">
-        <div id="buttons-container">
-            <input id="first-button" type="button" value="Dashboard" onclick="window.location.href='index.html'">
-            <input id="second button" type="button" value="Rides" onclick="window.location.href='VerRide.html'">
-            <input id="last-button" type="button" value="Settings" onclick="window.location.href='setting.html'">
+    <div id="container" class="container-fluid">
+        <img src="imagenes/Logo.jpg" alt="logo" width="150" height="150" class="logo img-fluid rounded mx-auto d-block mb-4">
+        <div id="buttons-container" class="d-flex justify-content-center mb-4">
+            <div class="btn-group" role="group" aria-label="Navigation">
+                <input id="first-button" type="button" value="Dashboard" class="btn btn-primary" onclick="window.location.href='index.html'">
+                <input id="second-button" type="button" value="Rides" class="btn btn-secondary" onclick="window.location.href='VerRide.html'">
+                <input id="last-button" type="button" value="Settings" class="btn btn-info" onclick="window.location.href='setting.html'">
+            </div>
         </div>
     
-        <div id="container-welcome">
-            <h1>Dashboard</h1>
-            <div>
-                <h2>Welcome User</h2>
-                <img id="img-user" src="imagenes/user.png" alt="">
+        <div id="container-welcome" class="card mb-4">
+            <div class="card-header">
+                <h1 class="card-title">Dashboard</h1>
+            </div>
+            <div class="card-body d-flex align-items-center">
+                <h2 class="me-3">Welcome User</h2>
+                <img id="img-user" src="imagenes/user.png" alt="" class="rounded-circle" style="width: 50px; height: 50px;">
             </div>
         </div>
     
@@ -31,87 +39,95 @@
             <span>Create</span>
         </div>
 
-        <!-- ################################## -->
         <form class="form-edit" action="#" method="post">
             <label for="fullname">Ride Name:</label>
             <br>
-            <input placeholder="Full Name" type="text" id="fullname" name="fullname" required>
-            <br>
-            <br>
+            <input placeholder="Full Name" type="text" id="fullname" name="fullname" class="form-control mb-3" required>
 
-            <div id="container-start-end">
-                <div>
+            <div id="container-start-end" class="row">
+                <div class="col-md-6">
                     <label for="speedAverage">Start from:</label>
-                    <input placeholder="Speed Average" type="text" id="speedAverage" name="speedAverage" required>
+                    <input placeholder="Speed Average" type="text" id="speedAverage" name="speedAverage" class="form-control" required>
                 </div>
-                <div>
-                    <label for="speedAverage">Start from:</label>
-                    <input placeholder="Speed Average" type="text" id="speedAverage" name="speedAverage" required>
+                <div class="col-md-6">
+                    <label for="speedAverage2">Start from:</label>
+                    <input placeholder="Speed Average" type="text" id="speedAverage2" name="speedAverage2" class="form-control" required>
                 </div>
-                
-                
             </div>
 
             <br>
             <label for="AboutMe">Description:</label>
             <br>
 
-            <textarea placeholder="This is my every day ride, from Barrio Los Angeles to my jobs office in Second Floor of Coopeservidores Building" name="AboutMe" id="AboutMe"></textarea>
-            <br>
-            <br>
+            <textarea placeholder="This is my every day ride, from Barrio Los Angeles to my jobs office in Second Floor of Coopeservidores Building" name="AboutMe" id="AboutMe" class="form-control mb-3"></textarea>
 
-           
-            <div id="container-botones">
-                <p><a href="index.html"> cancelar</a></p>
+            <div id="container-botones" class="d-flex justify-content-between">
+                <a href="index.html" class="btn btn-secondary"> Cancel</a>
                 <div id="boton-save">
-                    <input type="submit" value="Save">
+                    <input type="submit" value="Save" class="btn btn-primary">
                 </div>
             </div>
         </form>
 
         <hr>
 
-        
-        <div id="container-when">
-            <p>When</p>
-            
-            <div>
-                <div id="container-when-2">
-                    <div id="container-place">
+        <div id="container-when" class="card mt-4">
+            <div class="card-header">
+                <p class="card-title">When</p>
+            </div>
+            <div class="card-body">
+                <div id="container-when-2" class="row">
+                    <div id="container-place" class="col-md-6">
                         <label for="departure">Departure:</label>
-                        <br>
-                        <input placeholder="Speed Average" type="text" id="speedAverage" name="departure" required>
-                        <br>
-                        <br>
+                        <input placeholder="Speed Average" type="text" id="speedAverage" name="departure" class="form-control mb-3" required>
+                        
                         <label for="arrival">Estimated arrival:</label>
-                        <br>
-                        <input placeholder="Estimated arrival" type="text" id="speedAverage" name="arrival" required>
+                        <input placeholder="Estimated arrival" type="text" id="speedAverage" name="arrival" class="form-control" required>
                     </div>
         
-                    <div  id="container-days">
+                    <div id="container-days" class="col-md-6">
                         <p>Select days</p>
         
-                        <div>
-                            <label><input type="checkbox" name="day" value="monday"> Monday</label><br>
-                            <label><input type="checkbox" name="day" value="tuesday"> Tuesday</label><br>
-                            <label><input type="checkbox" name="day" value="wednesday"> Wednesday</label><br>
-                            <label><input type="checkbox" name="day" value="thursday"> Thursday</label><br>
-                            <label><input type="checkbox" name="day" value="friday"> Friday</label><br>
-                            <label><input type="checkbox" name="day" value="saturday"> Saturday</label><br>
-                            <label><input type="checkbox" name="day" value="sunday"> Sunday</label><br>
-        
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="day" value="monday" id="monday">
+                            <label class="form-check-label" for="monday">Monday</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="day" value="tuesday" id="tuesday">
+                            <label class="form-check-label" for="tuesday">Tuesday</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="day" value="wednesday" id="wednesday">
+                            <label class="form-check-label" for="wednesday">Wednesday</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="day" value="thursday" id="thursday">
+                            <label class="form-check-label" for="thursday">Thursday</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="day" value="friday" id="friday">
+                            <label class="form-check-label" for="friday">Friday</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="day" value="saturday" id="saturday">
+                            <label class="form-check-label" for="saturday">Saturday</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="day" value="sunday" id="sunday">
+                            <label class="form-check-label" for="sunday">Sunday</label>
                         </div>
                     </div>
                 </div>
             </div>
             
-            <div id="container-botones">
-                <p><a href="index.html"> cancelar</a></p>
-                <div id="boton-save">
-                    <input type="submit" value="Save">
-                </div>
+            <div class="card-footer d-flex justify-content-between">
+                <a href="index.html" class="btn btn-secondary"> Cancel</a>
+                <input type="submit" value="Save" class="btn btn-primary">
             </div>
         </div>
     </div>
+
+    <!-- Bootstrap JS (opcional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
