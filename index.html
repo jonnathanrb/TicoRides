@@ -6,7 +6,6 @@
     <title>Dashboard - TicoRides</title>
 
     <link rel="stylesheet" href="styles/index.css">
-    <script src="js/index.js"></script>
 </head>
 <body>
     <div id="container">
@@ -38,40 +37,46 @@
                 <img class="img-plus" src="imagenes/plus.png" alt="" onclick="window.location.href='CrearRide.html'">
             </div>
             
-            <table>
-                <tr class="fondo-1">
-                    <th>Name</th>
-                    <th>Start</th>
-                    <th>End</th>
-                    <th>Actions</th>
-                </tr>
-                <tr  class="fondo-2">
-                    <td>Brete</td>
-                    <td>Barrio Los Angeles</td>
-                    <td>Ciudad Quesada</td>
-                    <td>
-                        <button onclick="window.location.href='EditRide.html'">Edit</button>
-                        <button>Delete</button>
-                    </td>
-                </tr>
-                <tr  class="fondo-1">
-                    <td>Casa</td>
-                    <td>Ciudad Quesada</td>
-                    <td>Barrio Los Angeles</td>
-                    <td>
-                        <button onclick="window.location.href='EditRide.html'">Edit</button>
-                        <button>Delete</button>
-                    </td>
-                </tr>
-                <tr  class="fondo-2">
-                    <td>Oficina Chepe</td>
-                    <td>Ciudad Quesada</td>
-                    <td>San Pedro</td>
-                    <td>
-                        <button onclick="window.location.href='EditRide.html'">Edit</button>
-                        <button>Delete</button>
-                    </td>
-                </tr>
+            <table id="table-rides">
+                <thead>
+                    <tr class="fondo-1">
+                        <th>Name</th>
+                        <th>Start</th>
+                        <th>End</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr  class="fondo-2">
+                        <td>Brete</td>
+                        <td>Barrio Los Angeles</td>
+                        <td>Ciudad Quesada</td>
+                        <td>
+                            <button onclick="window.location.href='EditRide.html'">Edit</button>
+                            <button>Delete</button>
+                        </td>
+                    </tr>
+                    <tr  class="fondo-1">
+                        <td>Casa</td>
+                        <td>Ciudad Quesada</td>
+                        <td>Barrio Los Angeles</td>
+                        <td>
+                            <button onclick="window.location.href='EditRide.html'">Edit</button>
+                            <button>Delete</button>
+                        </td>
+                    </tr>
+                    <tr  class="fondo-2">
+                        <td>Oficina Chepe</td>
+                        <td>Ciudad Quesada</td>
+                        <td>San Pedro</td>
+                        <td>
+                            <button onclick="window.location.href='EditRide.html'">Edit</button>
+                            <button>Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+                
             </table>
 
             <img class="img-plus" src="imagenes/plus.png" alt="">

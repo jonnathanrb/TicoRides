@@ -40,6 +40,8 @@ if (formulario){
             localStorage.setItem(usuario.Username, JSON.stringify(usuario));
             console.log("Guardado");
             alert(`Usuario registrado: ${usuario.Username}`);
+
+            localStorage.setItem("logueado", usuario.Username);
             
             // Redirigir a index.html después del registro
             window.location.href = `index.html?username=${encodeURIComponent(usuario.Username)}`;
@@ -91,6 +93,7 @@ if (formularioLogin){
         console.log("Exito")
         // Login exitoso: redirigir a otra página
         alert(`Bienvenido, ${usuario.FirstName}!`);
+        localStorage.setItem("logueado", username);
         window.location.href = `index.html?username=${encodeURIComponent(username)}`;
     });
 }
