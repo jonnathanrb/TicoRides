@@ -19,7 +19,8 @@ if (formulario){
             LastName: inputLastName.value,
             Phone: inputPhone.value,
             Username: inputUsername.value,
-            Password: inputPassword.value
+            Password: inputPassword.value,
+            AboutMe: "Nada que decir"
         };
     
         // Validar datos

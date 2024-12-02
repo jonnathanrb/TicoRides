@@ -11,12 +11,12 @@
         <img src="imagenes/Logo.jpg" alt="logo" width="150" height="150" class="logo">
         <div id="buttons-container">
             <input id="first-button" type="button" value="Dashboard" onclick="window.location.href='index.html'">
-            <input id="second button" type="button" value="Rides" onclick="window.location.href='VerRide.html'">
+            <input id="second button" type="button" value="Rides" onclick="window.location.href='CrearRide.html'">
             <input id="last-button" type="button" value="Settings" onclick="window.location.href='setting.html'">
         </div>
     
         <div id="container-welcome">
-            <h1>Settings</h1>
+            <h1 id="title-settings">Settings</h1>
             <div>
                 <h2 id="welcomeMessage">Welcome User</h2>
                 <img id="img-user" src="imagenes/user.png" alt="">
@@ -34,22 +34,25 @@
             <input placeholder="Full Name" type="text" id="fullname" name="fullname" required>
             <br>
             <br>
+            <!-- 
             <label for="speedAverage">Speed Average:</label>
             <br>
             <input placeholder="Speed Average" type="text" id="speedAverage" name="speedAverage" required>
             <br>
             <br>
-            <label for="AboutMe">About Me:</label>
+            -->
+            
+            <label for="AboutMe">Phone :</label>
             <br>
-            <textarea placeholder="Something about me goes here" name="AboutMe" id="AboutMe"></textarea>
+            <textarea placeholder="This is my telephone number" name="AboutMe" id="AboutMe"></textarea>
             <br>
             <br>
 
            
             <div id="container-botones">
                 <p><a href="index.html"> cancelar</a></p>
-                <div id="boton-save">
-                    <input type="submit" value="Save">
+                <div id="boton-save-profile">
+                    <input type="button" value="Save">
                 </div>
             </div>
         </form>

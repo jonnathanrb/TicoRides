@@ -7,18 +7,20 @@
 
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/edit-ride.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <div id="container">
         <img src="imagenes/Logo.jpg" alt="logo" width="150" height="150" class="logo">
         <div id="buttons-container">
             <input id="first-button" type="button" value="Dashboard" onclick="window.location.href='index.html'">
-            <input id="second button" type="button" value="Rides" onclick="window.location.href='VerRide.html'">
+            <input id="second button" type="button" value="Rides" onclick="window.location.href='CrearRide.html'">
             <input id="last-button" type="button" value="Settings" onclick="window.location.href='setting.html'">
         </div>
     
         <div id="container-welcome">
-            <h1>Dashboard</h1>
+            <h1 class="text-3xl font-bold text-blue-500">Dashboard</h1>
             <div>
                 <h2 id="welcomeMessage">Welcome User</h2>
                 <img id="img-user" src="imagenes/user.png" alt="">
@@ -32,21 +34,21 @@
         </div>
 
         <!-- ################################## -->
-        <form class="form-edit" action="#" method="post">
+        <form class="form-edit" action="#" method="post" id="form-edit-ride">
             <label for="fullname">Ride Name:</label>
             <br>
-            <input placeholder="Full Name" type="text" id="fullname" name="fullname" required>
+            <input class="border border-gray-400 rounded-md p-2" placeholder="Full Name" type="text" id="fullname" name="fullname" required>
             <br>
             <br>
 
             <div id="container-start-end">
                 <div>
                     <label for="speedAverage">Start from:</label>
-                    <input placeholder="Speed Average" type="text" id="speedAverage" name="speedAverage" required>
+                    <input class="border border-gray-400 rounded-md p-2" placeholder="Start from" type="text" id="startFrom" name="speedAverage" required>
                 </div>
                 <div>
-                    <label for="speedAverage">Start from:</label>
-                    <input placeholder="Speed Average" type="text" id="speedAverage" name="speedAverage" required>
+                    <label for="end">End:</label>
+                    <input class="border border-gray-400 rounded-md p-2" placeholder="End" type="text" id="end" name="end" required>
                 </div>
                 
                 
@@ -56,17 +58,9 @@
             <label for="AboutMe">Description:</label>
             <br>
 
-            <textarea placeholder="This is my every day ride, from Barrio Los Angeles to my jobs office in Second Floor of Coopeservidores Building" name="AboutMe" id="AboutMe"></textarea>
+            <textarea class="border border-gray-400 rounded-md p-2" placeholder="This is my every day ride, from Barrio Los Angeles to my jobs office in Second Floor of Coopeservidores Building" name="AboutMe" id="AboutMe"></textarea>
             <br>
             <br>
-
-           
-            <div id="container-botones">
-                <p><a href="index.html"> cancelar</a></p>
-                <div id="boton-save">
-                    <input type="submit" value="Save">
-                </div>
-            </div>
         </form>
 
         <hr>
@@ -80,12 +74,12 @@
                     <div id="container-place">
                         <label for="departure">Departure:</label>
                         <br>
-                        <input placeholder="Speed Average" type="text" id="speedAverage" name="departure" required>
+                        <input class="border border-gray-400 rounded-md p-2" placeholder="Speed Average" type="text" id="Departure" name="departure" required>
                         <br>
                         <br>
                         <label for="arrival">Estimated arrival:</label>
                         <br>
-                        <input placeholder="Estimated arrival" type="text" id="speedAverage" name="arrival" required>
+                        <input class="border border-gray-400 rounded-md p-2" placeholder="Estimated arrival" type="text" id="Arrival" name="arrival" required>
                     </div>
         
                     <div  id="container-days">
@@ -108,7 +102,7 @@
             <div id="container-botones">
                 <p><a href="index.html"> cancelar</a></p>
                 <div id="boton-save">
-                    <input type="submit" value="Save">
+                    <input type="button" value="Save" class="btn btn-success">
                 </div>
             </div>
         </div>

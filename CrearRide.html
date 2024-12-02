@@ -5,20 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar - TicoRides</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-2yceH5zHlbkUjv46F3oCtS/VgtSVrrGKaFDfj+NvKcLgEo9T/sUtO/TZy5EV8tM" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/edit-ride.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <div id="container">
         <img src="imagenes/Logo.jpg" alt="logo" width="150" height="150" class="logo">
         <div id="buttons-container">
             <input id="first-button" type="button" value="Dashboard" onclick="window.location.href='index.html'">
-            <input id="second button" type="button" value="Rides" onclick="window.location.href='VerRide.html'">
+            <input id="second button" type="button" value="Rides" onclick="window.location.href='CrearRide.html'">
             <input id="last-button" type="button" value="Settings" onclick="window.location.href='setting.html'">
         </div>
     
         <div id="container-welcome">
-            <h1>Dashboard</h1>
+            <h1 class="text-3xl font-bold text-blue-500">Dashboard</h1>
             <div>
                 <h2 id="welcomeMessage">Welcome User</h2>
                 <img id="img-user" src="imagenes/user.png" alt="">
@@ -35,18 +38,18 @@
         <form class="form-edit" action="#" method="post">
             <label for="fullname">Ride Name:</label>
             <br>
-            <input placeholder="Full Name" type="text" id="fullname" name="fullname" required>
+            <input class="border border-gray-400 rounded-md p-2" placeholder="Full Name" type="text" id="fullname" name="fullname" required>
             <br>
             <br>
 
             <div id="container-start-end">
                 <div>
                     <label for="speedAverage">Start from:</label>
-                    <input placeholder="Start from" type="text" id="startFrom" name="speedAverage" required>
+                    <input class="border border-gray-400 rounded-md p-2" placeholder="Start from" type="text" id="startFrom" name="speedAverage" required>
                 </div>
                 <div>
                     <label for="end">End:</label>
-                    <input placeholder="End" type="text" id="end" name="end" required>
+                    <input class="border border-gray-400 rounded-md p-2" placeholder="End" type="text" id="end" name="end" required>
                 </div>
                 
                 
@@ -56,7 +59,7 @@
             <label for="AboutMe">Description:</label>
             <br>
 
-            <textarea placeholder="This is my every day ride, from Barrio Los Angeles to my jobs office in Second Floor of Coopeservidores Building" name="AboutMe" id="AboutMe"></textarea>
+            <textarea class="border border-gray-400 rounded-md p-2" placeholder="This is my every day ride, from Barrio Los Angeles to my jobs office in Second Floor of Coopeservidores Building" name="AboutMe" id="AboutMe"></textarea>
             <br>
             <br>
         </form>
@@ -72,12 +75,12 @@
                     <div id="container-place">
                         <label for="departure">Departure:</label>
                         <br>
-                        <input placeholder="Speed Average" type="text" id="Departure" name="departure" required>
+                        <input class="border border-gray-400 rounded-md p-2" placeholder="Speed Average" type="text" id="Departure" name="departure" required>
                         <br>
                         <br>
                         <label for="arrival">Estimated arrival:</label>
                         <br>
-                        <input placeholder="Estimated arrival" type="text" id="Arrival" name="arrival" required>
+                        <input class="border border-gray-400 rounded-md p-2" placeholder="Estimated arrival" type="text" id="Arrival" name="arrival" required>
                     </div>
         
                     <div  id="container-days">
@@ -91,7 +94,6 @@
                             <label><input type="checkbox" name="day" value="friday"> Friday</label><br>
                             <label><input type="checkbox" name="day" value="saturday"> Saturday</label><br>
                             <label><input type="checkbox" name="day" value="sunday"> Sunday</label><br>
-        
                         </div>
                     </div>
                 </div>
@@ -99,13 +101,16 @@
             
             <div id="container-botones">
                 <p><a href="index.html"> cancelar</a></p>
-                <div id="boton-save">
-                    <input type="button" value="Save">
+                <div id="boton-save" class="bg-green-500 text-white font-bold py-2 px-4 rounded hover:bg-green-600">
+                    <input type="button" value="Save" class="bg-green-500 text-white font-bold py-2 px-4 rounded hover:bg-green-600">
                 </div>
             </div>
         </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-ldJFH5Adyb8F0+Uw3l2ih96LGcUFDJSgnqsMJ0jwXsXopDRb7mA3BvRQmELg2f4d" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
+    
+
 </body>
 </html>
