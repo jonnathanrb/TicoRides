@@ -85,7 +85,8 @@ function MostrarRides() {
 
         // Recorrer cada ride y agregar una fila a la tabla
         rides.forEach((ride, index) => {
-            const row = document.createElement("tr"); // Crear una nueva fila
+            if (ride.Username == localStorage.getItem("logueado")){
+                const row = document.createElement("tr"); // Crear una nueva fila
             row.classList.add("fondo-2"); // Agregar la clase 'fondo-2'
 
             // Crear las celdas (td) y agregar los valores de cada ride
@@ -126,5 +127,7 @@ function MostrarRides() {
 
             // Agregar la fila a la tabla
             tableBody.appendChild(row);
+            }
+            
         });
 }
